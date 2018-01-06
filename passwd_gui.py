@@ -24,7 +24,7 @@ class Window(QtGui.QMainWindow):
 
         self.home()
         
-        #Quit button
+        
     def home(self):
         layout = QFormLayout()
         #Quit button
@@ -46,6 +46,7 @@ class Window(QtGui.QMainWindow):
         
         self.line.move(50, 40)
         self.line.resize(145, 32)
+        self.line.setAlignment(QtCore.Qt.AlignCenter)
         self.nameLabel.move(65, 10)
         self.nameLabel.resize(200,40)
         
@@ -54,6 +55,7 @@ class Window(QtGui.QMainWindow):
         self.textbox = QLineEdit(self)
         self.textbox.move(20, 120)
         self.textbox.resize(200,40)
+        self.textbox.setAlignment(QtCore.Qt.AlignCenter)
         
         self.show()
         
